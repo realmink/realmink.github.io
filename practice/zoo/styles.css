@@ -1,0 +1,15 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    list-style-type: none;
+}
+a{
+    padding: 15px;
+    background-color: LightBlue;
+}
+a:hover{
+    background-color: Pink;
+    padding: 20px;
+}
