@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chocolate Box</title>
+    <script src="validate.js"></script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Tahoma, sans-serif;
+            color: white;
+            padding: 15px;
+        }
+
+        .container {
+            display: grid;
+            width: 80vw;
+            height: 75vh;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: Thistle;
+            padding: 10px;
+            border-radius: 20px;
+            border: 8px solid red;
+            gap: 8px;
+        }
+
+        .heart {
+            height: 16vh;
+            aspect-ratio: 1;
+            background-color: chocolate;
+            margin: auto;
+            clip-path: polygon(50% 91%, 0 35%, 0 20%, 10% 5%, 30% 0, 50% 20%, 70% 0, 90% 5%, 100% 20%, 100% 35%);
+        }
+
+        #chocolateheart {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .lilbits {
+            grid-column: 1;
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .candy {
+            width: 10vh;
+            height: 10vh;
+            border-radius: 50%;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            font-size: 1.5em;
+            font-family: Tahoma, sans-serif;
+            font-weight: bold;
+            box-shadow: inset -5px -5px 8px #0004;
+        }
+
+        #mnm {
+            background-color: red;
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #blue {
+            background-color: dodgerblue;
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #yellow {
+            background-color: gold;
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        #green {
+            background-color: limegreen;
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #pink {
+            background-color: hotpink;
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #purple {
+            background-color: purple;
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .bar {
+            width: 13vh;
+            height: 6vh;
+            background-color: sienna;
+            border: 4px solid #63331f;
+            border-radius: 8px;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .truffle {
+            width: 9vh;
+            height: 9vh;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 25%, #b87950, #4b2115 70%);
+            margin: auto;
+            box-shadow: 3px 4px 5px #0005;
+        }
+
+        .pinkheart {
+            width: 12vh;
+            height: 12vh;
+            background-color: deeppink;
+            margin: auto;
+            clip-path: polygon(50% 90%, 0 30%, 0 15%, 20% 0, 50% 25%, 80% 0, 100% 15%, 100% 30%);
+        }
+
+        .section1 {
+            grid-column: 2;
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .section2 {
+            grid-column: 1;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .section3 {
+            grid-column: 2;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .section4 {
+            grid-column: 3;
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .section5 {
+            grid-column: 1;
+            grid-row: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .section6 {
+            grid-column: 3;
+            grid-row: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Here, I got you some chocolates &lt;3</h1>
+
+    <div class="container">
+
+        <div class="lilbits">
+            <div class="candy" id="mnm">M</div>
+            <div class="candy" id="blue">M</div>
+            <div class="candy" id="yellow">M</div>
+            <div class="candy" id="green">M</div>
+            <div class="candy" id="pink">M</div>
+            <div class="candy" id="purple">M</div>
+        </div>
+
+        <div class="section1">
+            <div class="truffle"></div>
+            <div class="bar">Choco</div>
+        </div>
+
+        <div id="chocolateheart" class="heart"></div>
+
+        <div class="section2">
+            <div class="pinkheart"></div>
+            <div class="truffle"></div>
+            <div class="bar">Sweet</div>
+            <div class="truffle"></div>
+        </div>
+
+        <div class="section3">
+            <div class="truffle"></div>
+            <div class="pinkheart"></div>
+            <div class="truffle"></div>
+            <div class="bar">Cocoa</div>
+        </div>
+
+        <div class="section4">
+            <div class="bar">Choco</div>
+            <div class="truffle"></div>
+            <div class="pinkheart"></div>
+            <div class="truffle"></div>
+        </div>
+
+        <div class="section5">
+            <div class="truffle"></div>
+            <div class="bar">Yum</div>
+            <div class="pinkheart"></div>
+            <div class="truffle"></div>
+        </div>
+
+        <div class="section6">
+            <div class="truffle"></div>
+            <div class="pinkheart"></div>
+            <div class="bar">Sweet</div>
+            <div class="truffle"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
